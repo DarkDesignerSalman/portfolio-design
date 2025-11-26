@@ -30,6 +30,7 @@ export const GRAPHIC_SUB_CATEGORIES = ['Logo', 'Flyer', 'Poster', 'Banner', 'You
 export const WEB_SUB_CATEGORIES = ['UI/UX', 'Dashboard', 'ERP', 'E-commerce', 'Blog', 'Delivery'];
 
 const PLACEHOLDER_IMG = "https://www.logoai.com/uploads/output/2025/04/19/0c61fa6a79a7055a4dfd9b288e882c41.jpg";
+const PLACEHOLDER_IMG_new = "https://cdn.dribbble.com/userupload/43049376/file/original-ac05725106b3cc97fdb8a60930ca0795.png?resize=1504x1128&vertical=centerhttps://www.logoai.com/uploads/output/2025/04/19/0c61fa6a79a7055a4dfd9b288e882c41.jpg";
 
 // Generate Mock Products
 export const INITIAL_PRODUCTS: Product[] = Array.from({ length: 10 }).map((_, i) => {
@@ -96,11 +97,27 @@ export const INITIAL_PORTFOLIO: PortfolioItem[] = [
   },
   {
     id: generateId(),
+    title: "Modern Logo Design Concept",
+    category: 'graphic',
+    subCategory: 'Logo',
+    image: PLACEHOLDER_IMG_new,
+    description: "A professional logo design concept focusing on modern minimalism and brand identity."
+  },
+  {
+    id: generateId(),
     title: "Corporate Brand Identity",
     category: 'graphic',
     subCategory: 'Logo',
     image: PLACEHOLDER_IMG,
     description: "Complete branding package including logo, business card, and letterhead design."
+  },
+  {
+    id: generateId(),
+    title: "E-commerce Dashboard UI",
+    category: 'web',
+    subCategory: 'Dashboard',
+    image: PLACEHOLDER_IMG,
+    description: "A clean and modern dashboard interface for managing online store orders and inventory."
   },
   {
     id: generateId(),
